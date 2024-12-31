@@ -1,0 +1,5 @@
+# use one point
+use_one_action: true # whether or not to use one point
+num: 1 # how many point to generate a trajectory
+tra_sample_time: 0.05 # s, minimum time interval
+pre_length: 10 # predictive length

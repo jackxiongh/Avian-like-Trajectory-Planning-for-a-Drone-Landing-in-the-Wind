@@ -1,0 +1,41 @@
+defaults:
+ - mode: one_point
+
+sample_time: 0.1 # s
+tra_time: 0.1 # s
+max_a: 2.0 # m/s2
+max_v: 5.0 # m/s
+# max_a: 10.0 # m/s2
+# max_v: 10.0 # m/s
+
+# area limitation
+area_max_x: 2.25 # +- m
+area_max_y: 1.5 # +- m
+area_max_z: 3.0 # m
+area_min_z: 0.5 # m
+
+max_wind_force: 2.5 # N
+max_step: 40 # max steps per episode
+
+# parameters of reward
+
+# {stage 1}
+# omega_p: 2.0
+# omega_v: 0.1
+# omega_t: 0.0
+# omega_p_decay: 1.0
+
+# {stage 2}
+omega_p: 2.0
+omega_v: 1.0 
+omega_t: 0.1
+omega_p_decay: 0.995
+
+omega_tp: 50.0
+omega_tv: 50.0
+
+obs_dim: 9
+act_dim: 3
+
+seed: 3213 # random seed
+Hz: 5 # control frequency

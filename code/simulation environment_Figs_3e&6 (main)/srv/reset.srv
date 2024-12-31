@@ -1,0 +1,4 @@
+geometry_msgs/Vector3 reset_pose
+---
+bool success
+geometry_msgs/Vector3 pose

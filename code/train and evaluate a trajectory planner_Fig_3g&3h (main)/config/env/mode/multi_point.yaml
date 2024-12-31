@@ -1,0 +1,4 @@
+# use multiplt points
+use_one_action: false # whether or not to use one point
+num: 3 # how many point to generate a trajectory
+tra_sample_time: 0.1 # s, minimum time interval

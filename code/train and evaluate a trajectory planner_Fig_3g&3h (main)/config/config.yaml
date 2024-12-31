@@ -1,0 +1,15 @@
+defaults:
+ - network: PPO
+ - env: simulation
+ - _self_
+
+hydra:
+#  mode: MULTIRUN
+ mode: RUN
+ run: 
+  dir: ../run/${now:%Y-%m-%d}/${now:%H-%M-%S}
+ sweep:
+  dir: ../multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+ sweeper:
+  params:
+   env.omega_p: range(0,2,1)

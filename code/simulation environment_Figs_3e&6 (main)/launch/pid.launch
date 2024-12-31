@@ -1,0 +1,7 @@
+<launch>
+	<include file="$(find mujocoEnv)/launch/env.launch">
+	</include>
+
+	<node name="PID" pkg="mujocoEnv" type="PIDControllerPos.py" output="screen" >
+	</node>
+</launch>

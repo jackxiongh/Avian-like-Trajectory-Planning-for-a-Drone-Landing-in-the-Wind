@@ -1,0 +1,20 @@
+name: ppo
+pi: [64, 64]
+vf: [64, 64]
+learning_rate: 0.0003
+batch_size: 64
+n_steps: 128 # The number of steps to run for each environment per update 
+n_epochs: 10 # Number of epoch when optimizing the surrogate loss
+gamma: 0.999 # Discount factor
+gae_lambda: 0.95 # Factor for trade-off of bias vs variance for Generalized Advantage Estimator
+max_episode: 5000 # total episode
+TIMESTEPS: 100000 # total learning step
+save_freq: 2500 # save model per $save_freq step
+if_load: true # whether to load model
+save_path: "/models/" # save path
+load_path: "./models/ppo/4-13-final" # you should specify it if you set evaluate to true
+# load_path: "./models/ppo/3-19-final" # you should specify it if you set evaluate to true
+policy: MlpPolicy # the policy model to use
+seed: 3213 # random seed
+verbose: 1 # true for verbose
+tensorboard_log: "/tensorboard/"

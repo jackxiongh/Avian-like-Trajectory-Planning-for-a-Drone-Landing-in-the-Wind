@@ -1,0 +1,3 @@
+<launch>
+	<node name="learning_node" pkg="rl_policy" type="experiment.py" />
+</launch>

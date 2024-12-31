@@ -1,0 +1,6 @@
+<launch>
+	<param name="net_model_path" value="$(find neuralNet)/resources/"/>
+	<node name="Net" pkg="neuralNet" type="mlmodel.py" output="screen" >
+
+	</node>
+</launch>
